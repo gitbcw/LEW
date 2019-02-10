@@ -1,0 +1,17 @@
+@import "../../lib/cw.wxss";
+.content{
+  text-align: center;
+  z-index: 0;
+}
+.title{
+  text-align: center;
+  font-weight: bold;
+}
+.annotation{
+  margin-top: 100rpx;
+  text-align: center;
+}
+
+.btn_group{
+  margin-top: 200rpx;
+}

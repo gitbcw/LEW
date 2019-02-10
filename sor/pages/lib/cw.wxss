@@ -1,0 +1,77 @@
+/** 一代CSS组，仅供练习使用;
+    source of cw;
+*/
+.cw_separator{
+  height: 10rpx;
+  background: skyblue;
+  margin-top: 30rpx;
+}
+.cw_placeholder{
+  font-size: 13px;
+  color:#ccc;
+}
+.cw_loading{
+  text-align: center;
+  color: #ccc;
+  padding: 10rpx;
+}
+.cw_title{
+  font-size: 20px;
+  text-align: center;
+  line-height: 80rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cw_flexRow{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.cw_flexColumn{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.cw_blue{
+  color: blue;
+}
+.cw_skyblue{
+  color: skyblue;
+}
+.cw_gray{
+  color: rgba(0, 0, 0, .5)
+}
+.cw_red{
+  color:red;
+}
+.cw_box{
+  z-index: 999;
+  height: 100%;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+.cw_window{
+  width: 50%;
+  background: rgba(0, 0, 0, .5);
+  padding: 20rpx;
+  border-radius: 20rpx;
+}
+.cw_text{
+  color: #fff;
+  text-align: center;
+}
+.cw_bold{
+  font-weight: bold;
+}
+.cw_white_small_button{
+  height: 60rpx;
+  width:140rpx;
+  background: #d5d5d5;
+  font-size: 30rpx;
+  padding: 2rpx;
+  line-height: 60rpx;
+}

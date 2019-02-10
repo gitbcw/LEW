@@ -1,0 +1,14 @@
+
+.desc{
+  display: flex;
+}
+.filer{
+  display: flex;
+}
+.file{
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.lbtclass{
+  margin-top: 20rpx;
+}

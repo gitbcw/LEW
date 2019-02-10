@@ -1,0 +1,18 @@
+@import "../lib/cw.wxss";
+
+
+.table{
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.tr{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.td{
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}

@@ -1,0 +1,68 @@
+@import "../lib/cw.wxss";
+
+page{
+  background: #fbf9fe;
+}
+.line{
+  height: 10rpx;
+  background: skyblue;
+}
+.tr{
+  display: flex;
+  flex-direction: column;
+}
+.table1{
+  display: flex;
+}
+.tr1{
+  display: flex;
+  justify-content: flex-end;
+}
+.td{
+  text-align: right;
+  overflow: hidden;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+.pang{
+  font-weight: bold;
+}
+.content1 button{
+  height: 80rpx;
+  width:160rpx;
+  font-size: 16px;
+  line-height: 80rpx;
+  margin-right: 10px;
+}
+.pick1{
+  width: 412rpx;
+  color: blue;
+}
+.pick2{
+  color: blue;
+  font-size: 35rpx;
+}
+fixed1{
+  width: 412rpx;
+}
+.button-group{
+  display: flex;
+}
+.button-group button{
+  height: 80rpx;
+  width:160rpx;
+  font-size: 16px;
+  line-height: 80rpx;
+  margin-right: 10px;
+}
+.header1{
+  font-weight: bold;
+  text-align: center;
+  font-size: 60rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  color: #4b4c4c;
+}
+.backCover{
+  margin: 10px;
+}

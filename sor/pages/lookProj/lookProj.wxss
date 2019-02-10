@@ -1,0 +1,41 @@
+@import "../lib/cw.wxss";
+
+.tips{
+  text-align: right;
+  color: green;
+  margin-right: 25rpx;
+}
+.pick_group{
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  display: flex;
+  justify-content: flex-end;
+}
+.pcik1{
+  width: 200rpx;
+}
+.header{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.tr{
+  display: flex;
+  justify-content: center; 
+  width: 100%;
+}
+.th{
+  width:30%;
+  font-weight: bold;
+}
+.th1{
+  width:70%;
+  font-weight: bold;
+}
+.td{
+  width:30%;
+}
+.td1{
+  width:70%;
+  color: blue;
+}

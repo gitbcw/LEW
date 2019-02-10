@@ -1,0 +1,15 @@
+
+<view class='btn-group'>
+  <button bindtap='projectManage' type='primary'>项目管理</button>
+  <button bindtap='finalManage' type='primary'>结题管理</button>
+  <button bindtap='personalInfo' type='primary'>个人信息</button>
+</view>
+
+<view hidden='{{flag}}' class='bottom-btn' wx:for='{{btn}}' wx:key='u'>
+  <label>
+  <view hidden='{{item.flag}}' class='low_btn'>
+    <button bindtap='first' id='{{index}}' type='warn'>{{item.firstBtn}}</button>
+    <button bindtap='second' id='{{index}}' type='warn'>{{item.secondBtn}}</button>
+    </view>
+  </label>
+</view>

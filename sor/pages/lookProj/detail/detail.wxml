@@ -1,0 +1,11 @@
+
+<view class='content'>
+  <view class='title'>{{projInfo.projName}}</view>
+  <view class='annotation'>项目主持人：{{projInfo.leader}}</view>
+  <view class='level'>项目级别：{{projInfo.projLv}}</view>
+  <view class='projStatus'>项目状态：{{projInfo.projStatus}}</view>
+</view>
+<view class='btn_group'>
+  <button type='primary' bindtap='change'>修改</button>
+  <button type='warn' bindtap='del'>删除</button>
+</view>

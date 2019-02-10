@@ -1,0 +1,13 @@
+
+.btn-group button{
+  margin: 100rpx;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.btn-group{
+  margin-top: 100rpx;
+}
+.low_btn{
+  height: 50px;
+  margin-top: 100rpx;
+}

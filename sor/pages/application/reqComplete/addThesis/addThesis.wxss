@@ -1,0 +1,15 @@
+/* pages/application/reqComplete/addThesis/addThesis.wxss */
+.tr1{
+  display: flex;
+  justify-content: flex-end;
+}
+.td{
+  text-align: right;
+  overflow: hidden;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+.pick1{
+  width: 412rpx;
+  color: blue;
+}

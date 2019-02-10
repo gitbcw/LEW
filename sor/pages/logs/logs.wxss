@@ -1,0 +1,15 @@
+
+.content{
+  text-align: center;
+}
+.title{
+  text-align: center;
+  font-weight: bold;
+}
+.annotation{
+  text-align: center;
+}
+
+.btn_group{
+  margin-top: 200rpx;
+}

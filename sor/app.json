@@ -1,0 +1,27 @@
+{
+  "pages": [
+    "pages/menur/menur",
+    "pages/cancel/cancel",
+    "pages/application/reqComplete/reqComplete",
+    "pages/application/reqComplete/addThesis/addThesis",
+    "pages/application/reqComplete/addAccessory/addAccessory",
+    "pages/application/application",
+    "pages/lookProj/lookProj",
+    "pages/changeReq/changeReq",
+    "pages/test/test",
+    "pages/projFill/projFill",
+    "pages/request/request",
+    "pages/logs/logs",
+    "pages/changePw/changePw",
+    "pages/info/info",
+    "pages/lookProj/detail/detail",
+    "pages/application/reqComplete/personInfo/personInfo",
+    "pages/menu/menu"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "高校科研项目跟踪系统",
+    "navigationBarTextStyle": "black"
+  }
+}

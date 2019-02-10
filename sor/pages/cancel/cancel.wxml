@@ -1,0 +1,16 @@
+<!--取消申请结题-->
+<view class='toper'>已申请结题的项目列表</view>
+<view class='content'>
+<view class='display_panel'>
+  <view class='header'>
+    <view class='th1'>项目名称</view>
+  </view>
+  <view class='circle'wx:for='{{projInfo}}' wx:key='cc'>
+    <view class='tr'>
+      <view class='td1'>{{item.projName}}</view>
+      <button bindtap='cancel' id='{{index}}' class='td' type='warn' size='mini'>取消申请</button>
+      </view>
+    </view>
+  </view>
+  <button bindtap='back'>back</button>
+</view>

@@ -1,0 +1,59 @@
+
+<!--toast -->
+<view class='box' wx:if="{{showToast}}">
+  <view class='window'>
+    <view class='text'>
+    {{toastText}}
+    </view>
+  </view>
+</view>
+
+<!--背景图-->
+<view class='logo'>
+  <image src='../img/logo.jpg'></image>
+</view>
+
+<!--loading-->
+<view class='login'>
+  <view class='user'>
+    <image src='../img/name.png'></image>
+    <input 
+    bindblur='userGet' 
+    placeholder-class='cw_placeholder'
+    placeholder='请输入用户名'>
+    </input>
+  </view>
+
+  <view class='password'>
+    <image src='../img/password.png'></image>
+    <input 
+    password='1'
+    bindblur='passGet' 
+    placeholder-class='cw_placeholder' 
+    placeholder='请输入密码'></input>
+  </view>
+
+  <view class='option'>
+  <radio-group bindchange='radio'>
+    <label class='radio' wx:for='{{items}}'>
+      <radio value='{{item.name}}' checked='{{item.checked}}'/>
+      {{item.value}}
+    </label>
+  </radio-group>
+  </view>
+<!-->
+  <view class='code'>
+  <image src='../img/code.png'></image>
+  <input 
+  placeholder-class='cw_placeholder' 
+  placeholder='请输入验证码'>
+  </input>
+  <button disabled='{{gainFlag}}' bindtap='gain' >{{key}}</button>
+  </view>
+<-->
+  <view>
+    <button bindtap='logIn' type='primary'>登录</button>
+    <button class='register' bindtap='register'>注册</button>
+    <button bindtap='tty'>try</button>
+  </view>
+</view>

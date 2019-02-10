@@ -1,0 +1,17 @@
+<!--pages/application/application.wxml-->
+<view class='toper'>可申请结题的项目列表</view>
+<view class='content'>
+<view class='display_panel'>
+  <view class='header'>
+    <view class='th'>项目编号</view>
+    <view class='th1'>项目名称</view>
+  </view>
+  <view class='circle' bindtap='touch' id='{{index}}' wx:for='{{projInfo}}' wx:key='cc'>
+    <view class='tr'>
+      <view class='td'>{{item.projNum}}</view>
+      <view class='td1'>{{item.projName}}</view>
+      </view>
+    </view>
+  </view>
+  <button bindtap='back'>back</button>
+</view>

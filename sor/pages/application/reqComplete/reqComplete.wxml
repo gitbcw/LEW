@@ -1,0 +1,66 @@
+
+<view class='th'>项目基本信息</view>
+<view class='content' bindtap='handle' id='{{index}}' wx:for='{{titleGather}}' wx:key='rc'  >
+  <view class='tr'>
+    <view class='td'>{{item}}</view>
+    <view class='td1'>{{projBase[id][index]}}</view>
+  </view>
+</view>
+<button bindtap='reqComplete' type='primary'>申请结题</button>
+<view bindtap='addFile' class='add'>添加结题报告附件</view>
+<!--添加论文信息-->
+<view>项目论文信息 <text class='add' bindtap='addThesis'>添加新的论文信息</text></view>
+<view class='content'>
+  <view class='tr'>
+    <view class='td'>论文名称</view>
+    <view class='td1'></view>
+  </view>
+  <view class='tr'>
+    <view class='td'>作者</view>
+    <view class='td1'></view>
+  </view>
+  <view class='tr'>
+    <view class='td'>作者排名</view>
+    <view class='td1'></view>
+  </view>
+  <view class='tr'>
+    <view class='td'>发表刊物</view>
+    <view class='td1'></view>
+  </view>
+  <view class='tr'>
+    <view class='td'>收录时间</view>
+    <view class='td1'></view>
+  </view>
+  <view class='tr'>
+    <view class='td'>发表时间</view>
+    <view class='td1'></view>
+  </view>
+</view>
+<!--添加著作信息-->
+<view>项目著作信息 <text class='add'>添加新的著作信息</text></view>
+<view class='content'>
+  <view class='tr'>
+    <view class='td'>著作名称</view>
+    <view class='td1'></view>
+  </view>
+  <view class='tr'>
+    <view class='td'>作者</view>
+    <view class='td1'></view>
+  </view>
+  <view class='tr'>
+    <view class='td'>作者排名</view>
+    <view class='td1'></view>
+  </view>
+  <view class='tr'>
+    <view class='td'>出版社</view>
+    <view class='td1'></view>
+  </view>
+  <view class='tr'>
+    <view class='td'>出版时间</view>
+    <view class='td1'></view>
+  </view>
+  <view class='tr'>
+    <view class='td'>出版号</view>
+    <view class='td1'></view>
+  </view>
+</view>

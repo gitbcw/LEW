@@ -1,0 +1,187 @@
+
+
+<!--提示用的弹窗-->
+<view class='cw_box' hidden='{{showToast}}'>
+  <view class='cw_window'>
+    <view class='cw_text'>{{toastText}}</view>
+  </view>
+</view>
+
+<view class='cw_separator'></view>
+
+<!--第一栏-->
+<view class='th1'>该批次项目基本信息</view>
+<view class='content1'>
+  <view class='table1'>
+
+    <view class='tr'>
+      <view class='td pang'>项目批次名称：</view>
+      <view class='td pang'>批次编号：</view>
+      <view class='td pang'>开始时间：</view>
+      <view class='td pang'>结束时间：</view>
+    </view>
+
+    <view class='tr'>
+      <view class='td'>高校党建研究开放基金</view>
+      <view class='td'>69</view>
+      <view class='td'>2014-3-1</view>
+      <view class='td'>2014-3-29</view>
+    </view>
+
+  </view>
+  <button bindtap='back'>返回</button>
+</view>
+
+<view class='cw_separator'></view>
+
+<!--第二栏-->
+<view>步骤一：请输入申请人基本信息</view>
+<view class='content2'>
+
+  <view class='tr1'>
+    <view class='td'>申请者姓名：</view>
+    <input placeholder='李四' placeholder-class='cw_placeholder'  bindblur='name'></input>
+  </view>
+
+  <view class='tr1'>
+    <view class='td'>申请者身份证号码：</view>
+    <input placeholder='18位身份证号码' placeholder-class='cw_placeholder'  bindblur='idcard'></input>
+  </view>
+
+  <view class='tr1'>
+    <view class='td'>项目名称：</view>
+    <input placeholder='请填入准确的项目名称' placeholder-class='cw_placeholder'  bindblur='projName'></input>
+  </view>
+
+  <view class='tr1'>
+    <view class='td'>学历：</view>
+    <picker class='pick1' range='{{edu}}' value='{{index[0]}}' bindchange='chooseEdu' >{{edu[index[0]]}}</picker>
+  </view>
+
+  <view class='tr1'>
+    <view class='td'>职称：</view>
+    <picker class='pick1' range='{{jobTitle}}' value='{{index[1]}}' bindchange='chooseJob' >{{jobTitle[index[1]]}}</picker>
+  </view>
+
+  <view class='tr1'>
+    <view class='td'>研究类型：</view>
+    <picker class='pick1' range='{{researchType}}' value='{{index[4]}}' bindchange='chooseType' >{{researchType[index[4]]}}</picker>
+  </view>
+
+  <view class='tr1'>
+    <view class='td'>项目经费：</view>
+    <input placeholder='请输入10000以上的数目' placeholder-class='cw_placeholder'  bindblur='projCost'></input>
+  </view>
+
+  <view class='tr1'>
+    <view class='td'>研究年限：</view>
+    <picker class='pick2' mode='date' value='{{startDate}}' bindchange='changeDate1'>{{startDate}}</picker>
+    <text style='font-size:45rpx; line-height:80%;color:red'>至</text>
+    <picker class='pick2' mode='date' value='{{endDate}}' bindchange='changeDate2'>{{endDate}}</picker>    
+  </view>
+
+  <view class='cw_red' style='text-align:right'>请点击蓝字进行选择</view>
+</view>
+
+<view class='cw_separator'></view>
+
+<view>步骤二：请填写相关参与人员信息</view>
+<view class='content2'>
+
+  <view class='tr1'>
+    <view class='td'>姓名：</view>
+    <input placeholder='张三' placeholder-class='cw_placeholder'  bindblur='relativeName'></input>
+  </view>
+
+  <view class='tr1'>
+    <view class='td'>学历：</view>
+    <picker class='pick1' range='{{edu}}' value='{{index[2]}}' bindchange='chooseEdu' >{{edu[index[2]]}}</picker>
+  </view>
+
+  <view class='tr1'>
+    <view class='td'>职称：</view>
+    <picker class='pick1' range='{{jobTitle}}' value='{{index[3]}}' bindchange='chooseJob' >{{jobTitle[index[3]]}}</picker>
+  </view>
+
+  <view class='tr1'>
+    <view class='td'>所在单位：</view>
+    <picker class='pick1' range='{{unit}}' value='{{index[5]}}' bindchange='chooseUnit' >{{unit[index[5]]}}</picker>
+  </view>
+
+  <view class='tr1'>
+    <view class='td'>身份证号码：</view>
+    <input placeholder='18位身份证号码' placeholder-class='cw_placeholder'  bindblur='relativeIdcard'></input>
+  </view>
+
+  <view class='button-group'>
+    <button bindtap='add' type='primary'>添加</button>
+    <button bindtap='del' type='warn'>删除</button>
+  </view>
+</view>
+
+<view class='cw_separator'></view>
+
+
+<view>步骤三：请填写预期成果及其它相关信息</view>
+<view class='content3'>
+
+  <view class='header1'>预期成果</view>
+
+  <view class='tr1'>
+    <view class='td'>论文：</view>
+    <picker class='pick1' range='{{num}}' value='{{Index[0]}}' bindchange='chooseNum1' >{{num[Index[0]]}}</picker>
+  </view>
+  
+  <view class='tr1'>
+    <view class='td'>专利：</view>
+    <picker class='pick1' range='{{num}}' value='{{Index[1]}}' bindchange='chooseNum2' >{{num[Index[1]]}}</picker>
+  </view>
+
+  <view class='tr1'>
+    <view class='td'>SCI：</view>
+    <picker class='pick1' range='{{num}}' value='{{Index[2]}}' bindchange='chooseNum3' >{{num[Index[2]]}}</picker>
+  </view>
+
+  <view class='tr1'>
+    <view class='td'>SSCI：</view>
+    <picker class='pick1' range='{{num}}' value='{{Index[3]}}' bindchange='chooseNum4' >{{num[Index[3]]}}</picker>
+  </view>
+
+  <view class='tr1'>
+    <view class='td'>EI：</view>
+    <picker class='pick1' range='{{num}}' value='{{Index[4]}}' bindchange='chooseNum5' >{{num[Index[4]]}}</picker>
+  </view>
+
+    <view class='header1'>联系方式</view>
+    
+  <view class='tr1'>
+    <view class='td'>手机：</view>
+    <input placeholder='13845612345' placeholder-class='cw_placeholder' bindblur='phoneNum'></input>
+  </view>
+
+  <view class='tr1'>
+    <view class='td'>QQ：</view>
+    <input placeholder='12548135' placeholder-class='cw_placeholder' bindblur='QQ_num'></input>
+  </view>
+
+  <view class='tr1'>
+    <view class='td'>邮箱：</view>
+    <input placeholder='zhangSan@163.com' placeholder-class='cw_placeholder' bindblur='E-mail'></input>
+  </view>
+  
+  <view class='cw_red' style='text-align:right'>请点击蓝字进行选择</view>
+</view>
+
+<view class='cw_separator'></view>
+
+<view>步骤四：请上传新附件</view>
+<view class='content4'>
+  <view class='tr1' style='margin:20rpx 0 10rpx 0'>
+    <button bindtap='chooseFile' class='cw_white_small_button'>选择文件</button>
+    <button bindtap='upLoadFile' class='cw_white_small_button'>上传文件</button>
+    </view>
+    <text class='cw_gray'>文件路径：</text><text class='cw_gray'>{{status}}</text>
+    <button type='primary' bindtap='submit'>确认提交申请</button>
+    <button bindtap='see'>查看缓存文件</button>
+    <view class='backCover'>注意：请勿修改申请表的格式，否则提交申请表系统不能自动解析！文件大小不能超过3M!</view>
+</view>

@@ -1,0 +1,10 @@
+<!--pages/application/reqComplete/addAccessory/addAccessory.wxml-->
+<view class='desc'>附件描述：
+  <input bindblur='reachDesc' placeholder='请输入你对文件的描述'></input>
+</view>
+<view class='filer'>
+  <view class='file'>文件：</view>
+  <button bindtap='chooseFile' class='btclass' size='mini'>选择文件</button>
+</view>
+<view>{{statu}}：{{status}}</view>
+<button class='lbtclass' bindtap='upload' type='primary'>上传</button>

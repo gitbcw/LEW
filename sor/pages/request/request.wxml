@@ -1,0 +1,45 @@
+<view class='content1'>
+  <view>步骤一：请先下载申请书模板并进行填写</view>
+  <view>点击下载申报表模板：</view>
+  <view bindtap='download' id='a' style='color:blue'>{{item1}}</view>
+  <view bindtap='download' id='b' style='color:blue'>{{item2}}</view>
+  <view bindtap='download' id='c' style='color:blue'>{{item3}}</view>
+  <view bindtap='download' id='d' style='color:blue'>{{item4}}</view>
+</view>
+
+<view class='cw_separator'></view>
+
+<view class='content2'>
+  <view>步骤二：请点击项目批次名称进行申报信息填写</view>
+  <view class='table'>
+    <view class='tr'>
+      <view class='td'>项目批次编号</view>
+      <view class='td'>69</view>
+    </view>
+    <view class='tr'>
+      <view class='td'>项目批次名称</view>
+      <view bindtap='fillIn' class='td' style='color:blue; border-bottom:1px solid'>高校党建研究</view>
+    </view>
+    <view class='tr'>
+      <view class='td'>项目发布日期</view>
+      <view class='td'>2016-5-4</view>
+    </view>
+    <view class='tr'>
+      <view class='td'>项目截止日期</view>
+      <view class='td'>2016-5-31</view>
+    </view>
+    <view class='tr'>
+      <view class='td'>项目受理开始日期</view>
+      <view class='td'>2016-5-4</view>
+    </view>
+    <view class='tr'>
+      <view class='td'>项目受理截止日期</view>
+      <view class='td'>2016-5-31</view>
+    </view>
+    <view class='tr'>
+      <view class='td'>项目批次状态</view>
+      <view class='td'>申请中</view>
+    </view>
+  </view>
+  <button type='warn' bindtap='back'>返回主菜单</button>
+</view>

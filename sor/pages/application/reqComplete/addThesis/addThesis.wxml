@@ -1,0 +1,57 @@
+<!--pages/application/reqComplete/addThesis/addThesis.wxml-->
+<view class='content2'>
+
+  <view class='tr1'>
+    <view class='td'>姓名：</view>
+    <input placeholder='李四' placeholder-class='cw_placeholder' bindblur='name'></input>
+  </view>
+
+  <view class='tr1'>
+    <view class='td'>论文名称：</view>
+    <input placeholder='请输入论文全名' placeholder-class='cw_placeholder' bindblur='thesisName'></input>
+  </view>
+
+  <view class='tr1'>
+    <view class='td'>发表刊物：</view>
+    <input placeholder='请输入发表刊物' placeholder-class='cw_placeholder' bindblur='periodical'></input>
+  </view>
+
+  <view class='tr1'>
+    <view class='td'>发表时间：</view>
+    <input placeholder='请输入发表时间' placeholder-class='cw_placeholder' bindblur='time'></input>
+  </view>
+
+  <view class='tr1'>
+    <view class='td'>卷期：</view>
+    <input placeholder='请输入论文卷期' placeholder-class='cw_placeholder' bindblur='volumn'></input>
+  </view>
+  
+  <view class='tr1'>
+    <view class='td'>收录情况：</view>
+    <picker class='pick1' range='{{include}}' 
+     value='{{index[0]}}' bindchange='include'>{{include[index[0]]}}</picker>
+  </view>
+
+  <view class='tr1'>
+    <view class='td'>影响因子：</view>
+    <input placeholder='请输入影响因子' placeholder-class='cw_placeholder' bindblur='factor'></input>
+  </view>
+
+  <view class='tr1'>
+    <view class='td'>作者排序：</view>
+    <picker class='pick1' range='{{sort}}' 
+     value='{{index[1]}}' bindchange='sort'>{{sort[index[1]]}}</picker>
+  </view>
+
+    <view class='tr1'>
+    <view class='td'>引用情况：</view>
+    <input placeholder='请输入引用情况' placeholder-class='cw_placeholder' bindblur='quote'></input>
+  </view>
+
+    <view class='tr1'>
+    <view class='td'>检索号：</view>
+    <input placeholder='请输入检索号' placeholder-class='cw_placeholder' bindblur='accession'></input>
+  </view>
+  <view class='cw_red' style='text-align:right'>请点击蓝字进行选择</view>
+</view>
+<button bindtap='submit' type='primary'>提交</button>
